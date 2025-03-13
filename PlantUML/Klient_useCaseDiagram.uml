@@ -1,0 +1,44 @@
+
+@startuml
+
+left to right direction
+frame "ud System zarządzania programem lojalnościowym wykorzystujący aplikację mobilnową i webową" {
+
+Klient as k
+
+rectangle {
+
+  usecase (Rejestracja w systemie jako Klient)
+  usecase (Rejestracja w systemie jako Klient)
+  usecase (Edycja danych osobowych)
+  usecase (Przeglądanie historii transkacji punktowych)
+  usecase (Przeglądanie historii transakcji zakupowych)
+  usecase (Sprawdzanie salda punktów)
+  usecase (Przeglądanie historii zdobywania i wymiany punktów)
+  usecase (Przeglądanie katalogu nagród)
+  usecase (Wymiana punktów za nagrody)
+  usecase (Przeglądanie historii zrealizowanych nagród)
+  usecase (Przeglądanie listy partnerów)
+  usecase (Wyświetlenie szczegołów partnera)
+  usecase (Przeglądanie listy posiadanych kuponów)
+  usecase (Wyświetlenie szczegołów kuponu)
+  usecase (Wyświetlenie indywidualnego kuponu QR)
+}
+
+
+k -- (Rejestracja w systemie jako Klient)
+k -- (Edycja danych osobowych)
+k -- (Przeglądanie historii transkacji punktowych)
+k -- (Przeglądanie historii transakcji zakupowych)
+k -- (Sprawdzanie salda punktów)
+k -- (Przeglądanie historii zdobywania i wymiany punktów)
+k -- (Przeglądanie katalogu nagród)
+k -- (Wymiana punktów za nagrody)
+k -- (Przeglądanie historii zrealizowanych nagród)
+k -- (Przeglądanie listy partnerów)
+k -- (Wyświetlenie szczegołów partnera)
+k -- (Przeglądanie listy posiadanych kuponów)
+k -- (Wyświetlenie szczegołów kuponu)
+k -- (Wyświetlenie indywidualnego kuponu QR)
+}
+@endluml

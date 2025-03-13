@@ -1,3 +1,4 @@
+
 @startuml
 
 left to right direction
@@ -14,6 +15,7 @@ rectangle "System zarządzania programem lojalnościowym wykorzystujący aplikac
   usecase (Wylogowanie)
   usecase (Zmiana hasła)
   usecase (Odzyskiwanie hasła)
+
   usecase (Rejestracja w systemie jako Klient)
   usecase (Rejestracja w systemie jako Klient)
   usecase (Edycja danych osobowych)
@@ -29,6 +31,7 @@ rectangle "System zarządzania programem lojalnościowym wykorzystujący aplikac
   usecase (Przeglądanie listy posiadanych kuponów)
   usecase (Wyświetlenie szczegołów kuponu)
   usecase (Wyświetlenie indywidualnego kuponu QR)
+
   usecase (Rejestracja w systemie jako Partner)
   usecase (Edycja punktów użytkownikom)
   usecase (Przeglądanie globalnej historii transakcji punktowych)
@@ -41,8 +44,10 @@ rectangle "System zarządzania programem lojalnościowym wykorzystujący aplikac
   usecase (Przeglądanie statystyk dotyczących ilości punktów, transakcji, popularności nagród)
   usecase (Przeglądanie katalogu nagród)
   usecase (Modyfikacja katalogu nagród)
+
   usecase (Skanowanie kodu QR Klienta)
   usecase (Finalizacja transakcji w której został zeskanowany kod QR)
+
   usecase (Przeglądanie listy użytkowników)
   usecase (Blokowanie i odblokowywanie użytkowników)
   usecase (Edycja danych użytkowników)

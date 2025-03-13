@@ -1,0 +1,36 @@
+@startuml
+
+left to right direction
+
+Admin as a
+
+frame "ud System zarządzania programem lojalnościowym wykorzystujący aplikację mobilnową i webową" {
+rectangle  {
+
+
+  usecase (Przeglądanie listy użytkowników)
+  usecase (Blokowanie i odblokowywanie użytkowników)
+  usecase (Edycja danych użytkowników)
+  usecase (Dodawanie nowych partnerów)
+  usecase (Edycja danych partnerów)
+  usecase (Usuwanie partnerów)
+  usecase (Zmiana ustawień systemu partnera)
+  usecase (Generowanie raportów dotyczących aktywności użytkowników, transkacji, popularności nagród)
+  usecase (Eksport danych)
+  usecase (Monitorowanie stanu systemu, logów, wydajności)
+}
+
+
+a -- (Przeglądanie listy użytkowników)
+a -- (Blokowanie i odblokowywanie użytkowników)
+a -- (Edycja danych użytkowników)
+a -- (Dodawanie nowych partnerów)
+a -- (Edycja danych partnerów)
+a -- (Usuwanie partnerów)
+a -- (Zmiana ustawień systemu partnera)
+a -- (Generowanie raportów dotyczących aktywności użytkowników, transkacji, popularności nagród)
+a -- (Eksport danych)
+a -- (Monitorowanie stanu systemu, logów, wydajności)
+}
+@endluml
+

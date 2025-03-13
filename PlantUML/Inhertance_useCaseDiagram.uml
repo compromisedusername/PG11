@@ -1,0 +1,17 @@
+@startuml
+frame "Diagram kontekstowy Systemu zarządzania programem lojalnościowym wykorzystujący aplikację mobilnową i webową" {
+left to right direction
+
+Klient as k
+Administrator as a
+Partner as p
+:Pracownik przedsiębiorstwa: as pp
+:Użytkownik {{abstract}}: as u
+
+
+k --|> u
+a --|> u
+p --|> u
+pp --|> u
+}
+@enduml

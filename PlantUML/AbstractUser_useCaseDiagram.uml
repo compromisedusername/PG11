@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+
+frame "ud System zarządzania programem lojalnościowym"  {
+:Użytkownik {{abstract}}: as u
+
+rectangle  {
+  usecase (Logowanie)
+  usecase (Wylogowanie)
+  usecase (Wylogowanie)
+  usecase (Zmiana hasła)
+  usecase (Odzyskiwanie hasła)
+  }
+
+u -- (Logowanie)
+u -- (Wylogowanie)
+u -- (Wylogowanie)
+u -- (Zmiana hasła)
+u -- (Odzyskiwanie hasła)
+}
+
+@enduml
+

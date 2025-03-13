@@ -1,0 +1,19 @@
+@startuml
+
+left to right direction
+
+frame "ud System zarządzania programem lojalnościowym wykorzystujący aplikację mobilnową i webową" {
+:Pracownik przedsiębiorstwa: as pp
+
+rectangle {
+
+  usecase (Skanowanie kodu QR Klienta)
+  usecase (Finalizacja transakcji w której został zeskanowany kod QR)
+
+}
+
+
+pp -- (Skanowanie kodu QR Klienta)
+pp -- (Finalizacja transakcji w której został zeskanowany kod QR)
+}
+@endluml

@@ -1,0 +1,40 @@
+@startuml
+
+left to right direction
+
+frame "ud System zarządzania programem lojalnościowym wykorzystujący aplikację mobilnową i webową" {
+Partner as p
+
+rectangle {
+
+  usecase (Rejestracja w systemie jako Partner)
+  usecase (Edycja punktów użytkownikom)
+  usecase (Przeglądanie globalnej historii transakcji punktowych)
+  usecase (Przeglądanie historii transkacji punktowych konkretnego klienta)
+  usecase (Zarządzanie kontami Pracowników przedsiębiorstwa)
+  usecase (Dodawanie nowych nagród)
+  usecase (Edycja istniejących nagród)
+  usecase (Usuwanie nagród)
+  usecase (Zarządzanie promocjami)
+  usecase (Przeglądanie statystyk dotyczących ilości punktów, transakcji, popularności nagród)
+  usecase (Przeglądanie katalogu nagród)
+  usecase (Modyfikacja katalogu nagród)
+}
+
+
+
+
+p -- (Rejestracja w systemie jako Partner)
+p -- (Edycja punktów użytkownikom)
+p -- (Przeglądanie globalnej historii transakcji punktowych)
+p -- (Przeglądanie historii transkacji punktowych konkretnego klienta)
+p -- (Zarządzanie kontami Pracowników przedsiębiorstwa)
+p -- (Dodawanie nowych nagród)
+p -- (Edycja istniejących nagród)
+p -- (Usuwanie nagród)
+p -- (Zarządzanie promocjami)
+p -- (Przeglądanie statystyk dotyczących ilości punktów, transakcji, popularności nagród)
+p -- (Przeglądanie katalogu nagród)
+p -- (Modyfikacja katalogu nagród)
+}
+@endluml
