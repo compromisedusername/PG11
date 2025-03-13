@@ -1,6 +1,6 @@
 
 @startuml
-
+frame " "System zarządzania programem lojalnościowym wykorzystujący aplikację mobilnową i webową" {
 left to right direction
 
 Klient as k
@@ -9,7 +9,7 @@ Partner as p
 :Pracownik przedsiębiorstwa: as pp
 :Użytkownik {{abstract}}: as u
 
-rectangle "System zarządzania programem lojalnościowym wykorzystujący aplikację mobilnową i webową" {
+rectangle {
   usecase (Logowanie)
   usecase (Wylogowanie)
   usecase (Wylogowanie)
@@ -115,7 +115,7 @@ a -- (Generowanie raportów dotyczących aktywności użytkowników, transkacji,
 a -- (Eksport danych)
 a -- (Monitorowanie stanu systemu, logów, wydajności)
 
-
+}
 
 
 
