@@ -1,0 +1,117 @@
+@startuml
+
+left to right direction
+
+Klient as k
+Administrator as a
+Partner as p
+:Pracownik przedsiębiorstwa: as pp
+:Użytkownik {{abstract}}: as u
+
+rectangle "System zarządzania programem lojalnościowym wykorzystujący aplikację mobilnową i webową" {
+  usecase (Logowanie)
+  usecase (Wylogowanie)
+  usecase (Wylogowanie)
+  usecase (Zmiana hasła)
+  usecase (Odzyskiwanie hasła)
+  usecase (Rejestracja w systemie jako Klient)
+  usecase (Rejestracja w systemie jako Klient)
+  usecase (Edycja danych osobowych)
+  usecase (Przeglądanie historii transkacji punktowych)
+  usecase (Przeglądanie historii transakcji zakupowych)
+  usecase (Sprawdzanie salda punktów)
+  usecase (Przeglądanie historii zdobywania i wymiany punktów)
+  usecase (Przeglądanie katalogu nagród)
+  usecase (Wymiana punktów za nagrody)
+  usecase (Przeglądanie historii zrealizowanych nagród)
+  usecase (Przeglądanie listy partnerów)
+  usecase (Wyświetlenie szczegołów partnera)
+  usecase (Przeglądanie listy posiadanych kuponów)
+  usecase (Wyświetlenie szczegołów kuponu)
+  usecase (Wyświetlenie indywidualnego kuponu QR)
+  usecase (Rejestracja w systemie jako Partner)
+  usecase (Edycja punktów użytkownikom)
+  usecase (Przeglądanie globalnej historii transakcji punktowych)
+  usecase (Przeglądanie historii transkacji punktowych konkretnego klienta)
+  usecase (Zarządzanie kontami Pracowników przedsiębiorstwa)
+  usecase (Dodawanie nowych nagród)
+  usecase (Edycja istniejących nagród)
+  usecase (Usuwanie nagród)
+  usecase (Zarządzanie promocjami)
+  usecase (Przeglądanie statystyk dotyczących ilości punktów, transakcji, popularności nagród)
+  usecase (Przeglądanie katalogu nagród)
+  usecase (Modyfikacja katalogu nagród)
+  usecase (Skanowanie kodu QR Klienta)
+  usecase (Finalizacja transakcji w której został zeskanowany kod QR)
+  usecase (Przeglądanie listy użytkowników)
+  usecase (Blokowanie i odblokowywanie użytkowników)
+  usecase (Edycja danych użytkowników)
+  usecase (Dodawanie nowych partnerów)
+  usecase (Edycja danych partnerów)
+  usecase (Usuwanie partnerów)
+  usecase (Zmiana ustawień systemu partnera)
+  usecase (Generowanie raportów dotyczących aktywności użytkowników, transkacji, popularności nagród)
+  usecase (Eksport danych)
+  usecase (Monitorowanie stanu systemu, logów, wydajności)
+}
+
+k --|> u
+a --|> u
+p --|> u
+pp --|> u
+
+u -- (Logowanie)
+u -- (Wylogowanie)
+u -- (Wylogowanie)
+u -- (Zmiana hasła)
+u -- (Odzyskiwanie hasła)
+
+
+k -- (Rejestracja w systemie jako Klient)
+k -- (Edycja danych osobowych)
+k -- (Przeglądanie historii transkacji punktowych)
+k -- (Przeglądanie historii transakcji zakupowych)
+k -- (Sprawdzanie salda punktów)
+k -- (Przeglądanie historii zdobywania i wymiany punktów)
+k -- (Przeglądanie katalogu nagród)
+k -- (Wymiana punktów za nagrody)
+k -- (Przeglądanie historii zrealizowanych nagród)
+k -- (Przeglądanie listy partnerów)
+k -- (Wyświetlenie szczegołów partnera)
+k -- (Przeglądanie listy posiadanych kuponów)
+k -- (Wyświetlenie szczegołów kuponu)
+k -- (Wyświetlenie indywidualnego kuponu QR)
+
+p -- (Rejestracja w systemie jako Partner)
+p -- (Edycja punktów użytkownikom)
+p -- (Przeglądanie globalnej historii transakcji punktowych)
+p -- (Przeglądanie historii transkacji punktowych konkretnego klienta)
+p -- (Zarządzanie kontami Pracowników przedsiębiorstwa)
+p -- (Dodawanie nowych nagród)
+p -- (Edycja istniejących nagród)
+p -- (Usuwanie nagród)
+p -- (Zarządzanie promocjami)
+p -- (Przeglądanie statystyk dotyczących ilości punktów, transakcji, popularności nagród)
+p -- (Przeglądanie katalogu nagród)
+p -- (Modyfikacja katalogu nagród)
+
+pp -- (Skanowanie kodu QR Klienta)
+pp -- (Finalizacja transakcji w której został zeskanowany kod QR)
+
+
+a -- (Przeglądanie listy użytkowników)
+a -- (Blokowanie i odblokowywanie użytkowników)
+a -- (Edycja danych użytkowników)
+a -- (Dodawanie nowych partnerów)
+a -- (Edycja danych partnerów)
+a -- (Usuwanie partnerów)
+a -- (Zmiana ustawień systemu partnera)
+a -- (Generowanie raportów dotyczących aktywności użytkowników, transkacji, popularności nagród)
+a -- (Eksport danych)
+a -- (Monitorowanie stanu systemu, logów, wydajności)
+
+
+
+
+
+@enduml
